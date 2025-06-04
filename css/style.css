@@ -1,13 +1,66 @@
-body {
-    font-family: monospace, Lucida Console;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* Main Colors */
+:root {
+    --primary-color: #4CAF50;
+    --accent-color: #2196F3;
+    --background-color: #f8f9fa;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'monospace', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Header */
 header {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
     color: white;
-    padding: 20px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/cover.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4em 1em;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* 50% transparency */
+    z-index: 1;
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2em;
+}
+
+.card {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
