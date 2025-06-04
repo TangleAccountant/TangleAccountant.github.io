@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Name Here</title>
+    <title>Your Name's Blog</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Site</h1>
+        <div class="logo">🏠</div>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="#about">About</a> |
+            <a href="blog/blog-post-1.html">Blog</a> |
+            <a href="#twitter">Twitter Dump</a> |
+            <a href="#jokes">Accounting Jokes</a>
+        </nav>
     </header>
-    <main>
-        <p>This is my first website!</p>
-    </main>
+
+    <section class="hero">
+        <h1>Your Name Here</h1>
+        <p>Welcome to my corner of the internet!</p>
+    </section>
+
+    <section class="content-grid">
+        <div class="card" id="about">
+            <h2>About Me</h2>
+            <p>Your bio goes here...</p>
+        </div>
+        <div class="card" id="blog">
+            <h2>Latest Blog Posts</h2>
+            <ul>
+                <li><a href="blog/blog-post-1.html">First Blog Post</a></li>
+                <li><a href="blog/blog-post-2.html">Second Blog Post</a></li>
+            </ul>
+        </div>
+        <div class="card" id="twitter">
+            <h2>Twitter Dump</h2>
+            <p>Your tweets go here...</p>
+        </div>
+        <div class="card" id="jokes">
+            <h2>Accounting Jokes</h2>
+            <p>Why did the accountant cross the road? To balance the books!</p>
+        </div>
+    </section>
 </body>
 </html>
