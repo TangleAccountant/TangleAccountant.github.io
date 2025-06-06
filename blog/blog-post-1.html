@@ -20,4 +20,19 @@
     
     <p><img src="../images/blog_how_i_made_over_1000_1.jpg" alt="self publishing a book" style="max-width:100%"></p>
 </body>
+
+<script>
+    // Toggle mobile menu
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('nav').classList.remove('active');
+        });
+    });
+</script>
+    
 </html>
