@@ -94,9 +94,9 @@ nav a {
     }
 
     /* REMOVE PIPES ON MOBILE */
-    nav a::after {
-        content: none;
-    }
+    nav a:not(:last-child)::after {
+    content: none;
+}
     
     /* EXISTING nav a STYLES (keep these) */
     nav a {
