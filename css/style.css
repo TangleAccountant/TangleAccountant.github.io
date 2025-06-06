@@ -28,6 +28,10 @@ nav a {
     margin: 0 10px;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 /* Hero Section */
 .hero {
     background: url('../images/cover.jpg') no-repeat center center/cover;
