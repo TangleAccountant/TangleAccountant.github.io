@@ -53,7 +53,7 @@ nav a {
 /* Content Grid */
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 20px;
     padding: 2em;
 }
@@ -63,4 +63,50 @@ nav a {
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* MOBILE HEADER */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    nav a {
+        display: block;
+        padding: 10px;
+        background: rgba(255,255,255,0.1);
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .logo {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .content-grid {
+        padding: 1em;
+    }
+    .hero {
+        padding: 2em 1em;
+    }
+    
+    .hero h1 {
+        font-size: 24px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+a, button {
+    touch-action: manipulation;
+    min-height: 44px;
+    min-width: 44px;
 }
