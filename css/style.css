@@ -22,6 +22,12 @@ header {
     align-items: center;
 }
 
+/* DESKTOP PIPE STYLES */
+nav a:not(:last-child)::after {
+    content: " | ";
+    margin: 0 5px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -84,6 +90,11 @@ nav a {
         margin-top: 10px;
         background: rgba(0,0,0,0.2); /* NEW - subtle background */
         padding: 0; /* NEW - removes default padding */
+    }
+
+    /* REMOVE PIPES ON MOBILE */
+    nav a::after {
+        content: none;
     }
     
     /* EXISTING nav a STYLES (keep these) */
