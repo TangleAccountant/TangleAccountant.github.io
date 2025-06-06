@@ -72,11 +72,17 @@ nav a {
         align-items: flex-start;
     }
     
+    /* UPDATED nav STYLES */
     nav {
-        margin-top: 10px;
+        display: none; /* NEW - hides menu by default */
+        flex-direction: column; /* NEW - stacks links vertically */
         width: 100%;
+        margin-top: 10px;
+        background: rgba(0,0,0,0.2); /* NEW - subtle background */
+        padding: 0; /* NEW - removes default padding */
     }
     
+    /* EXISTING nav a STYLES (keep these) */
     nav a {
         display: block;
         padding: 10px;
@@ -89,9 +95,11 @@ nav a {
         font-size: 24px;
         padding: 10px;
     }
+    
     .content-grid {
         padding: 1em;
     }
+    
     .hero {
         padding: 2em 1em;
     }
@@ -102,6 +110,22 @@ nav a {
     
     .hero p {
         font-size: 16px;
+    }
+    
+    /* ✨ NEW STYLES FOR MOBILE MENU ✨ */
+    .menu-toggle {
+        display: block; /* shows the ☰ button */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: auto; /* pushes button to the right */
+    }
+
+    /* ACTIVE STATE FOR MOBILE MENU */
+    nav.active {
+        display: flex; /* shows the menu when active */
     }
 }
 
