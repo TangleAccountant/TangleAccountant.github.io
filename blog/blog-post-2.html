@@ -8,4 +8,19 @@
     <h1>My 2nd Post</h1>
     <p>This is the content of my 2nd blog post!</p>
 </body>
+
+<script>
+    // Toggle mobile menu
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('nav').classList.remove('active');
+        });
+    });
+</script>
+    
 </html>
