@@ -75,20 +75,6 @@ nav a {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.logo-image {
-    height: 40px;
-    width: auto;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.logo-image:hover {
-    transform: rotate(5deg) scale(1.1);
-    border-color: rgba(255,255,255,0.3);
-}
-
-
 
 /* MOBILE HEADER */
 @media (max-width: 768px) {
@@ -156,10 +142,6 @@ nav a {
     /* ACTIVE STATE FOR MOBILE MENU */
     nav.active {
         display: flex; /* shows the menu when active */
-    }
-
-    .logo-image {
-        height: 32px; /* Slightly smaller on mobile */
     }
     
 }
