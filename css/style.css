@@ -97,6 +97,14 @@ nav a {
     margin-bottom: 10px; /* For spacing between bullets */
 }
 
+.card-image {
+    display: block; /* Makes the image a block element for centering */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 50%; /* Set your desired width */
+    height: auto; /* Maintains aspect ratio */
+    margin-top: 20px; /* Adds space above the image */
+}
+
 /* MOBILE HEADER */
 @media (max-width: 768px) {
     header {
