@@ -242,11 +242,6 @@ a, button {
 
 /* GLOBAL TYPOGRAPHY & SPACING */
 
-body {
-    line-height: 1.6;
-    padding: 0 1em;
-}
-
 p {
     margin-bottom: 1.5em;
 }
@@ -254,15 +249,6 @@ p {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 2em;
     margin-bottom: 1em;
-}
-
-/* HERO SECTION (tighter spacing) */
-.hero {
-    padding: 2em 1em;
-}
-
-.hero h1 {
-    margin-bottom: 0.5em;
 }
 
 /* GRID & FLEX LAYOUTS */
