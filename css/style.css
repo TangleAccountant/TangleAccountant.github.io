@@ -88,6 +88,9 @@ nav a {
     position: relative; /* Ensure cards respect z-index */
 }
 
+.card p {
+    line-height: 1.4; /* More spacing on desktop */
+}
 
 /* MOBILE HEADER */
 @media (max-width: 768px) {
