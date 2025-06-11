@@ -118,6 +118,7 @@ nav a {
     
     .content-grid {
         padding: 1em;
+        margin-top: 0; /* Remove overlap on mobile */
     }
     
     .hero {
