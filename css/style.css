@@ -66,6 +66,9 @@ nav a {
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: 20px;
     padding: 2em;
+    position: relative; /* Added */
+    z-index: 4; /* Above hero and its overlay */
+    margin-top: -80px; /* Adjust to ~1/4 of card height for overlap */
 }
 
 .card {
@@ -73,6 +76,7 @@ nav a {
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative; /* Ensure cards respect z-index */
 }
 
 
