@@ -92,6 +92,11 @@ nav a {
     line-height: 1.4; /* More spacing on desktop */
 }
 
+.card li {
+    line-height: 1.4; /* For text within each bullet */
+    margin-bottom: 10px; /* For spacing between bullets */
+}
+
 /* MOBILE HEADER */
 @media (max-width: 768px) {
     header {
