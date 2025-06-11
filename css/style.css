@@ -239,3 +239,39 @@ a, button {
     color: #666;
     margin: 0 1em 1em;
 }
+
+/* GLOBAL TYPOGRAPHY & SPACING */
+
+body {
+    line-height: 1.6;
+    padding: 0 1em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* HERO SECTION (tighter spacing) */
+.hero {
+    padding: 2em 1em;
+}
+
+.hero h1 {
+    margin-bottom: 0.5em;
+}
+
+/* GRID & FLEX LAYOUTS */
+.grid, .blog-grid, .content-grid {
+    padding: 0 1em;
+}
+
+@media (max-width: 768px) {
+    .grid, .blog-grid, .content-grid {
+        padding: 0 0.5em;
+    }
+}
