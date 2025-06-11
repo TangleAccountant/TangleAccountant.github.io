@@ -68,7 +68,7 @@ nav a {
     padding: 2em;
     position: relative; /* Added */
     z-index: 4; /* Above hero and its overlay */
-    margin-top: -80px; /* Adjust to ~1/4 of card height for overlap */
+    margin-top: -160px; /* Adjust to ~1/4 of card height for overlap */
 }
 
 .card {
