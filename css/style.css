@@ -62,11 +62,11 @@ nav a {
 
 /* Add font sizes for desktop */
 .hero h1 {
-    font-size: 64px; /* Increased from default (~32px) */
+    font-size: 48px; /* Increased from default (~32px) */
 }
 
 .hero p {
-    font-size: 32px; /* Increased from default (~16px) */
+    font-size: 24px; /* Increased from default (~16px) */
 }
 
 /* Content Grid */
