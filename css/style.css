@@ -121,11 +121,11 @@ nav a {
   --border-right: 6px;
   --text-stroke-color: #000; /* Black initial color */
   --animation-color: #37FF8B; /* Green hover color */
-  --fs-size: 1em; /* Reduced font size */
+  --fs-size: 1.5em; /* Reduced font size */
   letter-spacing: 1px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: monospace; /* Monospace font */
+  font-family: "Courier New", monospace; /* Monospace font */
   position: relative;
   text-transform: none;
   color: transparent;
@@ -136,12 +136,17 @@ nav a {
 /* Text wrappers */
 .text-wrapper, .hover-wrapper {
   display: inline-block;
-  white-space: nowrap;
 }
 
-/* Indent the second part */
+/* Part 1 styling */
+.part1 {
+  display: block; /* Ensures first part is on its own line */
+}
+
+/* Part 2 styling - new line */
 .part2 {
-  margin-left: 20px; /* Indentation after "What's" */
+  display: block; /* Forces second part to a new line */
+  margin-left: 0; /* Optional: add margin-left for indentation on the new line, e.g., 20px */
 }
 
 /* Hover wrapper styling */
@@ -156,15 +161,20 @@ nav a {
   -webkit-text-stroke: 1px var(--animation-color);
 }
 
+/* Match hover wrapper structure to text wrapper */
+.hover-wrapper .part1 {
+  display: block;
+}
+
+.hover-wrapper .part2 {
+  display: block;
+  margin-left: 0; /* Match .part2 styling */
+}
+
 /* Hover effect */
 .button:hover .hover-wrapper {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
-}
-
-/* Ensure both parts are styled consistently */
-.part1, .part2 {
-  display: inline;
 }
 
 /* MOBILE HEADER */
