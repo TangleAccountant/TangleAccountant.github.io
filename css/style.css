@@ -114,30 +114,27 @@ nav a {
   border: none;
   cursor: pointer;
   display: inline-block;
-  max-width: 300px; /* Adjust to control where text wraps */
+  max-width: 300px; /* Controls text wrapping */
 }
 
 /* Button styling for h2 */
 .button {
   --border-right: 6px;
-  --text-stroke-color: #000; /* Black initial color */
   --animation-color: #37FF8B; /* Green hover color */
   --fs-size: 1.5em; /* Reduced font size */
   letter-spacing: 1px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Courier New", monospace; /* Monospace font */
+  font-family: monospace; /* Monospace font */
   position: relative;
   text-transform: none;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
+  color: #000; /* Solid black text */
   line-height: 1.2;
 }
 
 /* Text wrappers */
 .text-wrapper, .hover-wrapper {
   display: inline-block;
-  /* Removed white-space: nowrap to allow wrapping */
 }
 
 /* Hover wrapper styling */
@@ -145,11 +142,10 @@ nav a {
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--animation-color);
+  color: var(--animation-color); /* Green text on hover */
   width: 0%;
   overflow: hidden;
   transition: width 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
 }
 
 /* Hover effect */
@@ -157,6 +153,7 @@ nav a {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
+
 
 /* MOBILE HEADER */
 @media (max-width: 768px) {
