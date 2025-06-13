@@ -105,6 +105,55 @@ nav a {
     margin-top: 20px; /* Adds space above the image */
 }
 
+/* Adapted from Uiverse.io by satyamchaudharydev */
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Ensures h2 behaves like a button */
+}
+
+/* Button styling for h2 */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em; /* Matches typical h2 size, adjust as needed */
+  letter-spacing: 1px; /* Adjusted for longer text readability */
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial", sans-serif;
+  position: relative;
+  text-transform: none; /* Changed to respect your title's casing */
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+  line-height: 1.2; /* Improves readability for longer text */
+}
+
+/* Hover text styling */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Hover effect */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
 /* MOBILE HEADER */
 @media (max-width: 768px) {
     header {
