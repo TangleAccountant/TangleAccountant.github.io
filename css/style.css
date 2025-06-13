@@ -113,24 +113,35 @@ nav a {
   padding: 0;
   border: none;
   cursor: pointer;
-  display: inline-block; /* Ensures h2 behaves like a button */
+  display: inline-block;
 }
 
 /* Button styling for h2 */
 .button {
   --border-right: 6px;
-  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --text-stroke-color: #000; /* Changed to black */
   --animation-color: #37FF8B;
-  --fs-size: 2em; /* Matches typical h2 size, adjust as needed */
-  letter-spacing: 1px; /* Adjusted for longer text readability */
+  --fs-size: 1.5em; /* Kept reduced font size */
+  letter-spacing: 1px;
   text-decoration: none;
   font-size: var(--fs-size);
-  font-family: "Arial", sans-serif;
+  font-family: "Courier New", monospace; /* Changed to monospace */
   position: relative;
-  text-transform: none; /* Changed to respect your title's casing */
+  text-transform: none;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
-  line-height: 1.2; /* Improves readability for longer text */
+  line-height: 1.2;
+}
+
+/* Styling for text parts */
+.actual-text, .hover-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Indent the second part */
+.part2 {
+  margin-left: 20px; /* Kept indentation */
 }
 
 /* Hover text styling */
@@ -145,7 +156,6 @@ nav a {
   overflow: hidden;
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
-  white-space: nowrap; /* Prevents text wrapping */
 }
 
 /* Hover effect */
