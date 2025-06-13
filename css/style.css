@@ -114,6 +114,7 @@ nav a {
   border: none;
   cursor: pointer;
   display: inline-block;
+  max-width: 300px; /* Adjust to control where text wraps */
 }
 
 /* Button styling for h2 */
@@ -136,17 +137,7 @@ nav a {
 /* Text wrappers */
 .text-wrapper, .hover-wrapper {
   display: inline-block;
-}
-
-/* Part 1 styling */
-.part1 {
-  display: block; /* Ensures first part is on its own line */
-}
-
-/* Part 2 styling - new line */
-.part2 {
-  display: block; /* Forces second part to a new line */
-  margin-left: 0; /* Optional: add margin-left for indentation on the new line, e.g., 20px */
+  /* Removed white-space: nowrap to allow wrapping */
 }
 
 /* Hover wrapper styling */
@@ -159,16 +150,6 @@ nav a {
   overflow: hidden;
   transition: width 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
-}
-
-/* Match hover wrapper structure to text wrapper */
-.hover-wrapper .part1 {
-  display: block;
-}
-
-.hover-wrapper .part2 {
-  display: block;
-  margin-left: 0; /* Match .part2 styling */
 }
 
 /* Hover effect */
