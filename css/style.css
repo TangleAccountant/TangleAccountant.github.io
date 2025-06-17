@@ -325,31 +325,23 @@ a, button {
 
 /* Image Modal */
 .image-modal {
-    display: none; /* Ensure modal is hidden on load */
-    position: fixed;
-    z-index: 1000;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stays in place over the page */
+    z-index: 1000; /* Appears above other content */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    min-height: 100vh; /* Ensure full viewport height */
-    background-color: rgba(0, 0, 0, 0.9); /* Darkened background */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Fallback for older browsers */
-    overflow: auto; /* Handle large images */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
 }
 
 .modal-content {
-    max-width: 90%; /* Limit width */
-    max-height: 90%; /* Limit height */
-    width: auto; /* Natural image width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center within flex */
+    max-width: 90%; /* Limits image size */
+    max-height: 90%;
+    margin: auto;
     display: block;
-    object-fit: contain; /* Prevent distortion */
-    position: relative; /* Ensure no positioning conflicts */
 }
 
 .close-modal {
@@ -382,11 +374,6 @@ a, button {
 
     .blog-image {
         margin: 1.5em auto;
-    }
-
-    .modal-content {
-        max-width: 95%; /* Slightly more width on mobile */
-        max-height: 95%; /* Slightly more height on mobile */
     }
 
     .close-modal {
