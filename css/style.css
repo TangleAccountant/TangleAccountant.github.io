@@ -325,24 +325,28 @@ a, button {
 
 /* Image Modal */
 .image-modal {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9); /* Darkened background */
+    display: flex; /* Explicit flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Fallback for older browsers */
 }
 
 .modal-content {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-    display: block;
-    object-fit: contain;
+    max-width: 90%; /* Limit width */
+    max-height: 90%; /* Limit height */
+    width: auto; /* Ensure image scales naturally */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center within flex container */
+    display: block; /* Ensure image behaves as block */
+    object-fit: contain; /* Prevent distortion */
 }
 
 .close-modal {
@@ -375,6 +379,11 @@ a, button {
 
     .blog-image {
         margin: 1.5em auto;
+    }
+
+    .modal-content {
+        max-width: 95%; /* Slightly more width on mobile */
+        max-height: 95%; /* Slightly more height on mobile */
     }
 
     .close-modal {
