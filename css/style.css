@@ -105,79 +105,6 @@ nav a {
     margin-top: 20px; /* Adds space above the image */
 }
 
-/* Modern monospace theme */
-        body {
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            font-family: monospace;
-            margin: 0;
-            padding: 0;
-        }
-
-        .quotes-section {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #252525;
-            border-left: 4px solid #00ff88;
-            box-shadow: 0 4px 15px rgba(0, 255, 136, 0.1);
-            border-radius: 8px;
-        }
-
-        .quotes-section h2 {
-            font-size: 1.8em;
-            color: #00ff88;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .quote {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #2e2e2e;
-            border-radius: 5px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .quote::before {
-            content: '>';
-            color: #00ff88;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        .quote-author {
-            font-size: 0.9em;
-            color: #b0b0b0;
-            text-align: right;
-            margin-top: 10px;
-            font-style: italic;
-        }
-
-        /* Typewriter effect */
-        .quote-text {
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 3s steps(40, end);
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        /* Hover effect */
-        .quote:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
-        }
-
 
 /* MOBILE HEADER */
 @media (max-width: 768px) {
@@ -258,19 +185,6 @@ nav a {
 
     .blog-hero {
         padding: 3em 1em;
-    }
-
-    .quotes-section {
-        margin: 20px;
-         padding: 15px;
-     }
-
-    .quotes-section h2 {
-        font-size: 1.5em;
-    }
-
-    .quote {
-        font-size: 1em;
     }
 }
     
