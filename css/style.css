@@ -298,6 +298,20 @@ a, button {
     margin: 0 auto;
 }
 
+/* Increase line spacing for blog content */
+.blog-content p,
+.blog-content ul,
+.blog-content li {
+    line-height: 1.6; /* Slightly increased from typical default (~1.2) or card’s 1.4 */
+}
+
+/* Optional: Adjust headings if desired */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+    line-height: 1.4; /* Moderate increase for headings */
+}
+
 /* Blog Images */
 .blog-image {
     display: block;
@@ -344,6 +358,19 @@ a, button {
 @media (max-width: 768px) {
     .blog-content {
         padding: 1em 1em;
+    }
+
+    /* Keep same line-height for consistency, or adjust if needed */
+    .blog-content p,
+    .blog-content ul,
+    .blog-content li {
+        line-height: 1.6;
+    }
+
+    .blog-content h1,
+    .blog-content h2,
+    .blog-content h3 {
+        line-height: 1.4;
     }
 
     .blog-image {
