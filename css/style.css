@@ -325,28 +325,31 @@ a, button {
 
 /* Image Modal */
 .image-modal {
-    display: none; /* Hidden by default */
+    display: none; /* Ensure modal is hidden on load */
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    min-height: 100vh; /* Ensure full viewport height */
     background-color: rgba(0, 0, 0, 0.9); /* Darkened background */
-    display: flex; /* Explicit flexbox for centering */
+    display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     text-align: center; /* Fallback for older browsers */
+    overflow: auto; /* Handle large images */
 }
 
 .modal-content {
     max-width: 90%; /* Limit width */
     max-height: 90%; /* Limit height */
-    width: auto; /* Ensure image scales naturally */
+    width: auto; /* Natural image width */
     height: auto; /* Maintain aspect ratio */
-    margin: auto; /* Center within flex container */
-    display: block; /* Ensure image behaves as block */
+    margin: 0 auto; /* Center within flex */
+    display: block;
     object-fit: contain; /* Prevent distortion */
+    position: relative; /* Ensure no positioning conflicts */
 }
 
 .close-modal {
