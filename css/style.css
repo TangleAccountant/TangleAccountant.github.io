@@ -343,11 +343,11 @@ a, button {
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .blog-content {
-        padding: 1em 0.5em;
+        padding: 1em 1em;
     }
 
     .blog-image {
-        margin: 1em auto;
+        margin: 1.5em auto;
     }
 
     .close-modal {
