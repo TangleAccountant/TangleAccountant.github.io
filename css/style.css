@@ -186,6 +186,14 @@ nav a {
     .blog-hero {
         padding: 3em 1em;
     }
+
+    .blog-hero h1 {
+        font-size: 24px;
+    }
+
+    .blog-hero p {
+        font-size: 16px;
+    }
 }
     
 }
@@ -198,11 +206,13 @@ a, button {
 
 /* BLOG HERO */
 .blog-hero {
-    background: url('../images/blog_cover_image.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 4em 1em;
     position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .blog-hero::after {
@@ -212,7 +222,7 @@ a, button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); /* 50% transparency */
     z-index: 1;
 }
 
@@ -220,6 +230,15 @@ a, button {
 .blog-hero p {
     position: relative;
     z-index: 2;
+}
+
+.blog-hero h1 {
+    font-size: 48px;
+    margin-bottom: 0.5em;
+}
+
+.blog-hero p {
+    font-size: 18px;
 }
 
 /* BLOG CARDS */
@@ -269,4 +288,70 @@ a, button {
     font-size: 0.9em;
     color: #666;
     margin: 0 1em 1em;
+}
+
+
+/* Blog Content */
+.blog-content {
+    padding: 2em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Blog Images */
+.blog-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Image Modal */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .blog-content {
+        padding: 1em 0.5em;
+    }
+
+    .blog-image {
+        margin: 1em auto;
+    }
+
+    .close-modal {
+        font-size: 30px;
+        right: 20px;
+    }
 }
