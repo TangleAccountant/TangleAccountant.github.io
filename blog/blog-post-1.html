@@ -7,27 +7,36 @@
 </head>
 <body>
     <header>
-    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="index.html">Blog</a>
-        <a href="#jokes">Accounting Jokes</a>
-    </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="index.html">Blog</a>
+            <a href="#jokes">Accounting Jokes</a>
+        </nav>
     </header>  
-    
-    <h1>How I Made Over $1,000 in One Month by Self-Publishing A Joke Book</h1>
-    <p><em>Published on April 15, 2020</em></p>
-    
-    <p>A common passive income strategy is to self-publish books, e-books, and audiobooks. In this article I’m going to show you how I went from having no idea how to write a book to self-publishing a joke book on Amazon and making over $1,000 in a single month.</p>
-    
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-    
-    <p><img src="../images/blog_how_i_made_over_1000_1.jpg" alt="self publishing a book" style="max-width:100%"></p>
+
+    <section class="blog-hero" style="background: url('../images/blog_how_i_made_over_1000_1.jpg') no-repeat center center/cover;">
+        <h1>How I Made Over $1,000 in One Month by Self-Publishing A Joke Book</h1>
+        <p><em>Published on April 15, 2020</em></p>
+    </section>
+
+    <main class="blog-content">
+        <p>A common passive income strategy is to self-publish books, e-books, and audiobooks. In this article I’m going to show you how I went from having no idea how to write a book to self-publishing a joke book on Amazon and making over $1,000 in a single month.</p>
+        
+        <img class="blog-image" src="../images/blog_how_i_made_over_1000_1.jpg" alt="Self-publishing process" loading="lazy">
+        
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </main>
+
+    <div class="image-modal" role="dialog" aria-label="Image zoom modal">
+        <span class="close-modal" aria-label="Close modal">×</span>
+        <img class="modal-content" alt="Enlarged blog image">
+    </div>
 </body>
 
 <script>
@@ -42,6 +51,35 @@
             document.querySelector('nav').classList.remove('active');
         });
     });
+
+    // Image zoom modal
+    const images = document.querySelectorAll('.blog-image');
+    const modal = document.querySelector('.image-modal');
+    const modalImg = document.querySelector('.modal-content');
+    const closeModal = document.querySelector('.close-modal');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            modal.style.display = 'none';
+        }
+    });
 </script>
-    
 </html>
