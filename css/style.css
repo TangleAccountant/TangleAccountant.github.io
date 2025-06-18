@@ -296,7 +296,6 @@ a, button {
     padding: 2em 1em;
     max-width: 1200px;
     margin: 0 auto;
-    font-size: 16px;
 }
 
 /* Increase line spacing for blog content */
@@ -328,7 +327,6 @@ a, button {
 @media (max-width: 768px) {
     .blog-content {
         padding: 1em 1em;
-        font-size: 16px;
     }
 
     /* Keep same line-height for consistency, or adjust if needed */
