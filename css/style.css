@@ -321,6 +321,8 @@ a, button {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    max-height: 500px; /* Limit image height on desktop */
+    object-fit: contain; /* Ensure image scales properly within max-height */
 }
 
 /* Mobile adjustments */
@@ -344,6 +346,7 @@ a, button {
 
     .blog-image {
         margin: 1.5em auto;
+        max-height: none; /* Remove height restriction on mobile */
     }
 
 }
