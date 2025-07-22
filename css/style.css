@@ -415,6 +415,11 @@ a, button {
     background-color: darken(var(--accent-color), 10%);
 }
 
+/* Define new variable for punchline color */
+:root {
+    --punchline-color: #2F4F4F; /* Dark slate green */
+}
+
 /* Jokes Content */
 .jokes-content {
     padding: 2em 1em;
@@ -445,7 +450,7 @@ a, button {
     display: block;
     margin-top: 0.5em;
     padding-left: 1.5em;
-    color: var(--accent-color); /* Matches your --accent-color (#2196F3) */
+    color: var(--punchline-color); /* Changed from --accent-color to dark green */
     font-style: italic; /* Adds a playful tone */
 }
 
