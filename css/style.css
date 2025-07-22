@@ -441,6 +441,14 @@ a, button {
     font-size: 16px;
 }
 
+.jokes-list .punchline {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1.5em;
+    color: var(--accent-color); /* Matches your --accent-color (#2196F3) */
+    font-style: italic; /* Adds a playful tone */
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .jokes-hero {
@@ -473,5 +481,9 @@ a, button {
 
     .jokes-list li {
         font-size: 14px;
+    }
+
+    .jokes-list .punchline {
+        padding-left: 1em;
     }
 }
