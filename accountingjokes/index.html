@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Jokes - Funny Man in a Financial World</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#about">About</a>
+            <a href="../blog/index.html">Blog</a>
+            <a href="#">Accounting Jokes</a>
+        </nav>
+    </header>
 
+    <section class="jokes-hero">
+        <div class="book-container">
+            <h1>Financial Jokes for Financial Folks</h1>
+            <p>A collection of hilarious accounting jokes written by a finance enthusiast with a comedic twist. Perfect for accountants, investors, and anyone who appreciates punny financial humor!</p>
+            <a href="https://a.co/d/hB4nvh5" target="_blank">
+                <img src="../images/blog_how_i_made_over_1000_4.jpg" alt="Financial Jokes for Financial Folks Book Cover" class="book-image">
+            </a>
+            <a href="https://a.co/d/hB4nvh5" target="_blank" class="buy-button">Buy on Amazon</a>
+        </div>
+    </section>
+
+    <section class="jokes-content">
+        <h2>100 Accounting Jokes</h2>
+        <ol class="jokes-list">
+            <li>[Insert your first accounting joke here]</li>
+            <li>[Insert your second accounting joke here]</li>
+            <!-- Repeat <li> for all 100 jokes. For example: -->
+            <li>[Insert joke 3 here]</li>
+            <!-- ... Continue up to 100 -->
+            <li>[Insert your 100th accounting joke here]</li>
+        </ol>
+    </section>
+</body>
+
+<script>
+    // Toggle mobile menu
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('nav').classList.remove('active');
+        });
+    });
+</script>
+
+</html>
