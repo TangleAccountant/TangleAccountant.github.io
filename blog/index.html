@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Funny Man Finance blog posts on investing, projects, and Zen Poke development updates.">
     <title>Funny Man Finance Blog</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -10,21 +11,26 @@
         <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="#about">About</a>
+            <a href="../zen-poke/index.html">Zen Poke</a>
             <a href="index.html">Blog</a>
-            <a href="#jokes">Accounting Jokes</a>
+            <a href="../accountingjokes/index.html">Accounting Jokes</a>
+            <a href="../contact/index.html">Contact</a>
         </nav>
     </header>
-    
 
     <section class="blog-hero" style="background: url('../images/blog_cover_image.jpg') no-repeat center center/cover;">
         <h1> Please Do Not Read My </h1>
         <p><em> Thoughts, stories, and ideas </em></p>
     </section>
 
-    
     <section class="blog-grid">
-        
+        <div class="blog-card">
+            <img src="../images/zen-poke/home-tab-main-runtime-1.png" alt="Zen Poke home screen screenshot" loading="lazy">
+            <h3><a href="zen-poke-announcement.html">Zen Poke Is In Development: A Cozy Needle-Felting Puzzle Game for iOS + Android</a></h3>
+            <p class="date">February 22, 2026</p>
+            <p class="blog-card-copy">Why I started building Zen Poke, what the core loop looks like, and where the project is headed next.</p>
+        </div>
+
         <div class="blog-card">
             <img src="../images/about_captain_picklepaws.jpg" alt="Blog Post 2">
             <h3><a href="blog-post-2.html">[Someday I'm Going to Write Something in Here</a></h3>
@@ -36,12 +42,20 @@
             <h3><a href="blog-post-1.html">How I Made Over $1,000 in One Month by Self-Publishing A Joke Book</a></h3>
             <p class="date">April 15, 2020</p>
         </div>
-        
     </section>
 
-    
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="../zen-poke/index.html">Zen Poke</a>
+            <a href="../support/zen-poke/index.html">Support</a>
+            <a href="../privacy/zen-poke/index.html">Privacy</a>
+            <a href="../terms/zen-poke/index.html">Terms</a>
+            <a href="../contact/index.html">Contact</a>
+        </div>
+        <p>&copy; 2026 Funny Man Finance / TangleAccountant</p>
+    </footer>
+
     <script>
-        // Mobile menu script (same as other pages)
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('nav').classList.toggle('active');
         });

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zen Poke is a cozy mobile needle-felting puzzle game in development for iOS and Android.">
+    <title>Zen Poke Is In Development | Funny Man Finance Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../zen-poke/index.html">Zen Poke</a>
+            <a href="index.html">Blog</a>
+            <a href="../accountingjokes/index.html">Accounting Jokes</a>
+            <a href="../contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="blog-hero" style="background: url('../images/zen-poke/shell-v2-main-polish-play-v4.png') no-repeat center center/cover;">
+        <h1>Zen Poke Is In Development</h1>
+        <p><em>Published on February 22, 2026</em></p>
+    </section>
+
+    <main class="blog-content">
+        <p>Zen Poke is a portrait-first mobile needle-felting puzzle game I am building in Unity for iOS and Android. The goal is simple: make a relaxing, tactile-feeling puzzle experience that is easy to pick up and satisfying to finish.</p>
+
+        <p>This is a real production buildout project, not just a weekend prototype. Right now the focus is on a polished mobile shell, a stronger gameplay feel pass, and release-ready quality for the basic progression surfaces.</p>
+
+        <img class="blog-image" src="../images/zen-poke/home-tab-main-runtime-1.png" alt="Zen Poke home tab screenshot" loading="lazy">
+
+        <h2>What Zen Poke Is</h2>
+        <p>The game is designed around portrait gameplay and a cozy needle-felting theme. The current shell includes core tabs like Main, Daily, Shop, and Me, with a strong emphasis on touch ergonomics and a smooth mobile UX.</p>
+
+        <p>I am intentionally keeping the scope focused. The priority is shipping something that feels good in your hands, performs reliably, and can be improved over time.</p>
+
+        <img class="blog-image" src="../images/zen-poke/home-tab-daily-runtime-1.png" alt="Zen Poke daily tab screenshot" loading="lazy">
+
+        <h2>Release and Monetization Plan</h2>
+        <p>Zen Poke is currently in development. Store listings for iOS and Android are not live yet.</p>
+
+        <p>The release plan includes optional ad monetization for non-entitled users and a one-time remove-ads purchase. Before launch, the exact ad network and privacy disclosures on the site will be updated to match the final production SDK configuration.</p>
+
+        <p>If you are here because of app store review, ad network onboarding, or developer verification, the public app pages for Zen Poke live here on Funny Man Finance:</p>
+        <ul>
+            <li><a href="../zen-poke/index.html">Zen Poke app page</a></li>
+            <li><a href="../support/zen-poke/index.html">Zen Poke support</a></li>
+            <li><a href="../privacy/zen-poke/index.html">Zen Poke privacy policy</a></li>
+            <li><a href="../terms/zen-poke/index.html">Zen Poke terms</a></li>
+        </ul>
+
+        <img class="blog-image" src="../images/zen-poke/home-tab-shop-runtime-1.png" alt="Zen Poke shop tab screenshot" loading="lazy">
+
+        <h2>Why This Is On Funny Man Finance</h2>
+        <p>This site started as a finance and jokes corner of the internet. It is now also the public home for my software and game projects. I wanted to keep the existing content and personality while adding the pieces needed to support a real app launch.</p>
+
+        <p>More Zen Poke updates will show up here as the project moves toward release.</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="../zen-poke/index.html">Zen Poke</a>
+            <a href="../support/zen-poke/index.html">Support</a>
+            <a href="../privacy/zen-poke/index.html">Privacy</a>
+            <a href="../terms/zen-poke/index.html">Terms</a>
+            <a href="../contact/index.html">Contact</a>
+        </div>
+        <p>&copy; 2026 Funny Man Finance / TangleAccountant</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

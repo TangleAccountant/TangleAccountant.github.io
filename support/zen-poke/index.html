@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zen Poke support page for contact, troubleshooting, and purchase restore requests.">
+    <title>Zen Poke Support | Funny Man Finance</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="../../zen-poke/index.html">Zen Poke</a>
+            <a href="../../blog/index.html">Blog</a>
+            <a href="../../accountingjokes/index.html">Accounting Jokes</a>
+            <a href="../../contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="legal-shell">
+        <section class="legal-header">
+            <p class="eyebrow">Zen Poke Support</p>
+            <h1>Support for Zen Poke</h1>
+            <p>Use this page for app support requests, troubleshooting, and release questions for Zen Poke.</p>
+        </section>
+
+        <section class="legal-content">
+            <h2>Support Contact</h2>
+            <p>Email: <a href="mailto:support@funnymanfinance.com">support@funnymanfinance.com</a></p>
+            <p class="small-note">Replace this placeholder support email with your active inbox before listing the app in App Store Connect or Google Play Console.</p>
+            <p>Expected response time: 3-5 business days.</p>
+
+            <h2>What to Include in a Support Request</h2>
+            <ul>
+                <li>App name: Zen Poke</li>
+                <li>App version (when available)</li>
+                <li>Device model and OS version</li>
+                <li>Short description of the issue</li>
+                <li>Steps to reproduce (if possible)</li>
+                <li>Screenshots or screen recording (optional but helpful)</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>The app is still in development. Can I download it?</h3>
+                    <p>Not yet. Public store links will be added to the <a href="../../zen-poke/index.html">Zen Poke app page</a> once release builds are available.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I restore a Remove Ads purchase?</h3>
+                    <p>When the app is live, a restore purchase option will be available in-app. If restore fails, contact support with your platform (iOS/Android), app version, and a description of what happened.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why are ads showing?</h3>
+                    <p>The release plan includes ads for non-entitled users. If you have already purchased Remove Ads and ads still appear, contact support with your device/platform details and a screenshot if possible.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How should I report a crash or bug?</h3>
+                    <p>Please include device model, OS version, app version, and the steps you took right before the issue. That is usually enough to reproduce and fix most problems faster.</p>
+                </div>
+            </div>
+
+            <h2>Policies</h2>
+            <p>
+                <a href="../../privacy/zen-poke/index.html">Privacy Policy</a> |
+                <a href="../../terms/zen-poke/index.html">Terms of Use</a> |
+                <a href="../../contact/index.html">Publisher Contact</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="../../zen-poke/index.html">Zen Poke</a>
+            <a href="index.html">Support</a>
+            <a href="../../privacy/zen-poke/index.html">Privacy</a>
+            <a href="../../terms/zen-poke/index.html">Terms</a>
+            <a href="../../contact/index.html">Contact</a>
+        </div>
+        <p>&copy; 2026 Funny Man Finance / TangleAccountant</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
