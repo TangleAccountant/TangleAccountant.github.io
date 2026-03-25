@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My 2nd Post</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 2nd Post | Funny Man Finance</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>My 2nd Post</h1>
-    <p>This is the content of my 2nd blog post!</p>
-</body>
+    <header>
+        <a href="../index.html" class="site-logo">Funny Man Finance</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../zen-poke/index.html">Zen Poke</a>
+            <a href="index.html">Blog</a>
+            <a href="../accountingjokes/index.html">Jokes</a>
+            <a href="../contact/index.html">Contact</a>
+        </nav>
+    </header>
 
-<script>
-    // Toggle mobile menu
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('nav').classList.toggle('active');
-    });
+    <section class="blog-hero" style="background: url('../images/blog_cover_image.jpg') no-repeat center center/cover;">
+        <h1>My 2nd Post</h1>
+        <p><em>Coming soon</em></p>
+    </section>
 
-    // Close menu when clicking a link
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.querySelector('nav').classList.remove('active');
+    <main class="blog-content">
+        <p>This is the content of my 2nd blog post!</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="../zen-poke/index.html">Zen Poke</a>
+            <a href="../support/zen-poke/index.html">Support</a>
+            <a href="../privacy/zen-poke/index.html">Privacy</a>
+            <a href="../terms/zen-poke/index.html">Terms</a>
+            <a href="../contact/index.html">Contact</a>
+        </div>
+        <p>&copy; 2026 Funny Man Finance / Andrew Worden</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
         });
-    });
-</script>
-    
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>
