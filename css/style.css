@@ -566,6 +566,21 @@ a, button {
     margin-bottom: 10px;
 }
 
+.app-card-badge--live {
+    background: #1f6f43;
+    color: #fff;
+}
+
+.app-store-badge {
+    display: inline-block;
+    height: 45px;
+}
+
+.app-store-badge img {
+    height: 100%;
+    width: auto;
+}
+
 /* Blog additions */
 .blog-card-copy {
     padding: 0 1em 1em;
