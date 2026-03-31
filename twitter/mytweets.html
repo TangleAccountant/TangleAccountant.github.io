@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social archive placeholder for Funny Man Finance.">
+    <meta name="robots" content="noindex,follow">
+    <meta name="theme-color" content="#162b22">
+    <link rel="canonical" href="https://funnymanfinance.com/twitter/mytweets.html">
+    <title>Social Archive Placeholder | Funny Man Finance</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/" class="site-logo">Funny Man Finance</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/zen-poke/">Zen Poke</a>
+            <a href="/blog/">Blog</a>
+            <a href="/accountingjokes/">Jokes</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+    </header>
 
+    <main class="legal-shell">
+        <section class="legal-header">
+            <p class="eyebrow">Social Archive Placeholder</p>
+            <h1>This Page Is Not Part of the Public Site Structure</h1>
+            <p>This URL is being kept only as a placeholder archive and is intentionally excluded from search results.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/zen-poke/">Zen Poke</a>
+            <a href="/blog/">Blog</a>
+            <a href="/contact/">Contact</a>
+        </div>
+        <p>&copy; 2026 Funny Man Finance / Andrew Worden</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -3,82 +3,147 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Funny Man Finance is a personal site and indie app publisher home for Zen Poke, a calm satisfying felt reveal game available on the App Store.">
-    <title>Funny Man in a Financial World</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Funny Man Finance is the home of Zen Poke, a calm felt-style puzzle game for iPhone and iPad, with Android updates, app support, portfolio work, and finance humor from Andrew Worden.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#162b22">
+    <link rel="canonical" href="https://funnymanfinance.com/">
+    <meta property="og:site_name" content="Funny Man Finance">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zen Poke, Games, and Projects by Andrew Worden | Funny Man Finance">
+    <meta property="og:description" content="Explore Zen Poke, a calm felt-style puzzle game for iPhone and iPad, plus Android updates, portfolio work, support pages, and finance humor.">
+    <meta property="og:url" content="https://funnymanfinance.com/">
+    <meta property="og:image" content="https://funnymanfinance.com/images/zen-poke/updated/01-hero.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zen Poke, Games, and Projects by Andrew Worden | Funny Man Finance">
+    <meta name="twitter:description" content="Funny Man Finance is the home of Zen Poke, a calm felt-style puzzle game for iPhone and iPad, with Android updates and portfolio work from Andrew Worden.">
+    <meta name="twitter:image" content="https://funnymanfinance.com/images/zen-poke/updated/01-hero.png">
+    <title>Zen Poke, Games, and Projects by Andrew Worden | Funny Man Finance</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://funnymanfinance.com/#organization",
+                    "name": "Funny Man Finance",
+                    "url": "https://funnymanfinance.com/",
+                    "logo": "https://funnymanfinance.com/images/logo.png",
+                    "email": "wordena16@gmail.com",
+                    "founder": {
+                        "@type": "Person",
+                        "name": "Andrew Worden"
+                    }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://funnymanfinance.com/#website",
+                    "url": "https://funnymanfinance.com/",
+                    "name": "Funny Man Finance",
+                    "publisher": {
+                        "@id": "https://funnymanfinance.com/#organization"
+                    },
+                    "about": {
+                        "@type": "SoftwareApplication",
+                        "name": "Zen Poke"
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
     <header>
-        <a href="index.html" class="site-logo">Funny Man Finance</a>
+        <a href="/" class="site-logo">Funny Man Finance</a>
         <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="zen-poke/index.html">Zen Poke</a>
-            <a href="blog/index.html">Blog</a>
-            <a href="accountingjokes/index.html">Jokes</a>
-            <a href="contact/index.html">Contact</a>
+            <a href="/">Home</a>
+            <a href="/zen-poke/">Zen Poke</a>
+            <a href="/blog/">Blog</a>
+            <a href="/accountingjokes/">Jokes</a>
+            <a href="/contact/">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Funny Man in a Financial World</h1>
-        <p>Born to be a Comedian &mdash; Built to be an Investor (and now building games too)</p>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Zen Poke, Games, and Projects by Andrew Worden</h1>
+            <p>Funny Man Finance is the home of Zen Poke, a calm felt-style puzzle game for iPhone and iPad, with Android updates, portfolio work, and a running archive of finance humor.</p>
+        </section>
 
-    <section class="content-grid">
-        <div class="card" id="about">
-            <img src="images/profile.png" alt="the eternal optimist" width="150" style="border-radius:50%">
-            <h2>About</h2>
-            <p>This site exists because I have an unhealthy obsession with finance. My favorite definition of finance has always been "the art and science of managing money."</p>
-            <p><strong>Art AND Science.</strong></p>
-            <p>A beautiful balance. All you need to know is that I started my journey interested in corporate finance. That evolved into personal finance. And once that was capped out I moved onto decentralized finance. All 3 of these domains have a direct impact on your life, whether you realize it or not. Hopefully I can look back on these pages when I'm older and see where everything went right or where it all went wrong.</p>
-            <p>I also build software and games, which is where <a href="zen-poke/index.html">Zen Poke</a> comes in.</p>
-        </div>
-
-        <div class="card" id="blog">
-            <h2>Latest Posts</h2>
-            <p>Writing things down helps to better synthesize and articulate new ideas. These posts are mostly used to map out investment theses that I believe have a good shot of playing out. If I'm not capable of writing an entire article on why I should buy something, I probably shouldn't buy it.</p>
-            <p>Not limited to investment posts.</p>
-            <ul>
-                <li><a href="blog/zen-poke-launch.html">Zen Poke Is Live on the App Store</a></li>
-                <li><a href="blog/zen-poke-announcement.html">Zen Poke Is In Development</a></li>
-                <li><a href="blog/blog-post-1.html">How I Made Over $1,000 in One Month by Self-Publishing A Joke Book</a></li>
-            </ul>
-        </div>
-
-        <div class="card" id="zen-poke">
-            <img src="images/zen-poke/updated/01-hero.png" alt="Zen Poke level gallery screenshot" class="app-card-thumb" loading="lazy">
-            <div class="app-card-badge app-card-badge--live">Available on the App Store</div>
-            <h2>Zen Poke</h2>
-            <p>Poke fluffy felt art and watch cozy handmade scenes come to life. Relax with daily reveals, offline-friendly play, stars, streaks, and cosmetic unlocks.</p>
-            <p>Zen Poke is a calm, satisfying felt reveal game built for portrait play. Slowly uncover finished handmade scenes, one soft reveal at a time.</p>
-            <div class="card-cta-group">
-                <a class="app-store-badge" href="https://apps.apple.com/us/app/zen-poke/id6759535111"><img src="images/app-store-badge.svg" alt="Download on the App Store"></a>
-                <a class="button-link" href="zen-poke/index.html">Learn More</a>
-                <a class="button-link button-link-secondary" href="privacy/zen-poke/index.html">Privacy</a>
-                <a class="button-link button-link-secondary" href="support/zen-poke/index.html">Support</a>
+        <section class="content-grid">
+            <div class="card" id="about">
+                <img src="images/profile.png" alt="Portrait of Andrew Worden" width="150" style="border-radius:50%">
+                <h2>About Andrew</h2>
+                <p>I am Andrew Worden, the person behind Funny Man Finance, TangleAccountant, and Zen Poke. This site now acts as both my personal portfolio and the public website for my app projects.</p>
+                <p>My background started in finance and investing, then expanded into writing, software, and game development. The main focus here now is building useful, memorable digital products and giving Zen Poke a strong public home on the open web.</p>
+                <p>If you want the app first, head to the <a href="/zen-poke/">main Zen Poke page</a>. If you want the broader portfolio and writing, the <a href="/blog/">blog</a> and <a href="/contact/">contact page</a> are the best next stops.</p>
             </div>
-        </div>
 
-        <div class="card" id="jokes">
-            <h2>Accounting Jokes</h2>
-            <p>A long time ago I wrote and published a book called "Financial Jokes for Financial Folks." <a href="accountingjokes/index.html">I created a page on here</a> so anybody can read them for free if they're deep into accounting and want a cheap laugh.</p>
-            <p>Buy the book on Amazon by clicking it below if you want to give it away as a gag gift or something.</p>
-            <a href="https://a.co/d/hB4nvh5">
-                <img src="images/blog_how_i_made_over_1000_4.jpg" alt="Financial Jokes for Financial Folks" class="card-image">
-            </a>
-        </div>
-    </section>
+            <div class="card" id="blog">
+                <h2>Latest Posts</h2>
+                <p>The blog covers Zen Poke launch updates, indie app experiments, writing projects, and whatever else seems worth documenting. These posts also help explain what the app is, why it exists, and how it is evolving.</p>
+                <ul>
+                    <li><a href="/blog/zen-poke-launch.html">Zen Poke Is Live on the App Store</a></li>
+                    <li><a href="/blog/zen-poke-announcement.html">Zen Poke Is In Development</a></li>
+                    <li><a href="/blog/blog-post-1.html">How I Made Over $1,000 in One Month by Self-Publishing a Joke Book</a></li>
+                </ul>
+            </div>
+
+            <div class="card" id="zen-poke">
+                <img src="images/zen-poke/updated/01-hero.png" alt="Zen Poke puzzle selection screen" class="app-card-thumb" loading="lazy">
+                <div class="app-card-badge app-card-badge--live">Available on the App Store</div>
+                <div class="app-card-badge">Android updates available here</div>
+                <h2>Zen Poke</h2>
+                <p>Zen Poke is a calm, satisfying felt-style puzzle game built for portrait play. You slowly reveal soft art scenes, finish daily puzzles, and play in short, low-pressure sessions that feel more relaxing than demanding.</p>
+                <p>The game is designed for people who want something cozy and tactile-feeling to do when they do not want a loud, high-stress mobile game. It works well for short breaks, evening wind-down time, and casual daily play.</p>
+                <div class="card-cta-group">
+                    <a class="app-store-badge" href="https://apps.apple.com/us/app/zen-poke/id6759535111?utm_source=funnymanfinance&utm_medium=website&utm_campaign=zen_poke_site&utm_content=homepage_card" aria-label="Download Zen Poke on the App Store">
+                        <img src="images/app-store-badge.svg" alt="Download Zen Poke on the App Store">
+                    </a>
+                    <a class="button-link" href="/zen-poke/">Zen Poke App Details</a>
+                    <a class="button-link button-link-secondary" href="/zen-poke/faq/">Zen Poke FAQ</a>
+                    <a class="button-link button-link-secondary" href="/zen-poke/android/">Android Status</a>
+                    <a class="button-link button-link-secondary" href="/support/zen-poke/">Support</a>
+                </div>
+            </div>
+
+            <div class="card" id="guides">
+                <h2>Zen Poke Guides</h2>
+                <p>These pages are built to answer the most common questions about Zen Poke, clarify platform availability, and explain how the game fits into the relaxing puzzle space.</p>
+                <ul>
+                    <li><a href="/zen-poke/faq/">Zen Poke FAQ</a></li>
+                    <li><a href="/zen-poke/how-to-play/">How to Play Zen Poke</a></li>
+                    <li><a href="/zen-poke/relaxing-puzzle-game/">Why Zen Poke Is a Relaxing Puzzle Game</a></li>
+                    <li><a href="/zen-poke/offline-puzzle-game-iphone/">Zen Poke as an Offline-Friendly iPhone Puzzle Game</a></li>
+                    <li><a href="/zen-poke/daily-puzzle-game/">Zen Poke Daily Puzzle Game Overview</a></li>
+                    <li><a href="/zen-poke/brand-facts/">Zen Poke Brand Facts</a></li>
+                </ul>
+            </div>
+
+            <div class="card" id="jokes">
+                <h2>Accounting Jokes</h2>
+                <p>Funny Man Finance started with a lot of accounting and finance humor, and that side of the site is still here. If you want free jokes for accountants, finance people, or anyone who enjoys corny money puns, the archive is still open.</p>
+                <p>The jokes help preserve the personality of the site, while Zen Poke represents the current app and game-building direction.</p>
+                <div class="card-cta-group">
+                    <a class="button-link" href="/accountingjokes/">Read the Accounting Jokes</a>
+                    <a class="button-link button-link-secondary" href="https://a.co/d/hB4nvh5">View the Joke Book on Amazon</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="site-footer">
         <div class="footer-links">
-            <a href="zen-poke/index.html">Zen Poke</a>
-            <a href="support/zen-poke/index.html">Support</a>
-            <a href="privacy/zen-poke/index.html">Privacy</a>
-            <a href="terms/zen-poke/index.html">Terms</a>
-            <a href="contact/index.html">Contact</a>
+            <a href="/zen-poke/">Zen Poke</a>
+            <a href="/zen-poke/faq/">FAQ</a>
+            <a href="/zen-poke/android/">Android</a>
+            <a href="/support/zen-poke/">Support</a>
+            <a href="/privacy/zen-poke/">Privacy</a>
+            <a href="/terms/zen-poke/">Terms</a>
+            <a href="/contact/">Contact</a>
         </div>
-        <p>Funny Man Finance publishes Zen Poke.</p>
+        <p>Funny Man Finance is the public home of Zen Poke and the portfolio site of Andrew Worden.</p>
         <p>&copy; 2026 Funny Man Finance / Andrew Worden</p>
     </footer>
 

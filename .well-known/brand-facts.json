@@ -1,0 +1,33 @@
+{
+  "name": "Zen Poke",
+  "publisher": {
+    "name": "Funny Man Finance",
+    "founder": "Andrew Worden",
+    "contactEmail": "wordena16@gmail.com"
+  },
+  "category": [
+    "mobile puzzle game",
+    "relaxing casual game",
+    "felt-style puzzle game"
+  ],
+  "platforms": [
+    "iPhone",
+    "iPad",
+    "Android"
+  ],
+  "downloadLinks": {
+    "appStore": "https://apps.apple.com/us/app/zen-poke/id6759535111",
+    "website": "https://funnymanfinance.com/zen-poke/",
+    "androidStatus": "https://funnymanfinance.com/zen-poke/android/"
+  },
+  "support": {
+    "page": "https://funnymanfinance.com/support/zen-poke/",
+    "email": "wordena16@gmail.com"
+  },
+  "policies": {
+    "privacy": "https://funnymanfinance.com/privacy/zen-poke/",
+    "terms": "https://funnymanfinance.com/terms/zen-poke/"
+  },
+  "summary": "Zen Poke is a calm felt-style puzzle game designed for short, satisfying, low-pressure mobile sessions.",
+  "lastUpdated": "2026-03-31"
+}
