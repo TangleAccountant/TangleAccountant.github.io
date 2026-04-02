@@ -1,6 +1,6 @@
 # Zen Poke Answer Intent Map
 
-Last updated: March 31, 2026
+Last updated: April 2, 2026
 
 This document is the first working answer-intent tracker for `funnymanfinance.com` and Zen Poke.
 
@@ -108,6 +108,33 @@ Run this loop once per week:
 The goal is not to test hundreds of prompts. The goal is to test a stable set of good prompts and notice trend movement.
 
 ## 4. Baseline Search/AEO Findings
+
+### Week 1 answer-engine baseline summary
+
+The first full manual check across ChatGPT, Gemini, and Perplexity shows a clear split:
+
+- branded + download intent is the strongest current lane
+- Android status intent is also strong, especially in Perplexity
+- broad non-branded discovery prompts are still all effectively `0`
+
+What worked best:
+
+- `where can I download Zen Poke`
+- `is Zen Poke on Android`
+
+What stayed weak across all three tools:
+
+- `what is a daily puzzle game that feels relaxing`
+- `what are good stress relief games`
+- `what are calm games for adults`
+- earlier tests for `relaxing puzzle game for iPhone`
+- earlier tests for `offline puzzle game for iPhone`
+
+Practical takeaway:
+
+- Zen Poke is becoming understandable when the user already has download or platform intent
+- Zen Poke is not yet breaking into generic calming / relaxing / stress-relief discovery queries
+- this means the next growth layer is not more random pages, but stronger external citations and tighter internal linking from the pages that already align with download intent
 
 ### Branded collision
 
@@ -233,6 +260,18 @@ The next actions after creating this map are:
 3. Keep using `app_store_click` as the main website KPI.
 4. Once Google Play is live, retest all Android prompts immediately.
 5. Add one new citation surface before adding more owned pages.
+
+## 8.1 Current priority after Week 1
+
+The next highest-leverage work is:
+
+1. keep testing the same prompt set weekly instead of expanding it randomly
+2. strengthen internal links from `/zen-poke/`, `/zen-poke/android/`, and `/zen-poke/brand-facts/`
+3. add one external citation surface that cleanly describes Zen Poke as a calming iPhone game
+4. update Android pages immediately when Google Play goes live
+
+The current evidence does **not** support building more broad category pages right now.
+It supports making the existing best pages easier for answer engines to trust and cite.
 
 ## 9. Suggested Sheet Columns
 
