@@ -40,7 +40,7 @@ Confirmed inputs:
 
 Implication:
 
-- Public copy should use language like `felt art`, `felt-style`, `cozy`, `soft`, `calming`, `satisfying`, `portrait`, `offline-friendly`, `daily puzzle`, and `short sessions`
+- Public copy should use language like `felt art`, `felt-style`, `cozy`, `soft`, `calming`, `satisfying`, `phone-friendly`, `offline-friendly`, `daily puzzle`, and `short sessions`
 - Public copy should avoid claiming the product is `handmade`
 - Public copy should avoid medical or therapeutic claims like `treats anxiety`, `improves depression`, or `mental health treatment`
 
@@ -178,7 +178,7 @@ The strategy should be:
 
 - own the brand/entity
 - own the descriptive product category around the game
-- own the use-case phrases around calm play, short sessions, satisfying play, portrait play, and offline-friendly puzzle sessions
+- own the use-case phrases around calm play, short sessions, satisfying play, phone-friendly play, and offline-friendly puzzle sessions
 - publish direct-answer pages and structured comparison/explainer content
 
 ## 7. Keyword Strategy Principles
@@ -234,7 +234,7 @@ High priority:
 - `calming mobile puzzle game`
 - `satisfying puzzle game`
 - `offline puzzle game iPhone`
-- `portrait puzzle game`
+- `phone-friendly puzzle game`
 - `daily puzzle game app`
 - `casual puzzle game for adults`
 - `stress relief game app`
