@@ -62,6 +62,9 @@ The strongest early signals found so far:
 - two relevant Reddit discussions are already live and aligned with the product audience:
   - `r/cozygames`
   - `r/needlefelting`
+- two Medium citation-support articles are now live:
+  - `Zen Poke Is a Relaxing Mobile Game for Short Breaks`
+  - `Zen Poke Fits Adults Looking for a Calming Mobile Game`
 
 Implication:
 
@@ -224,7 +227,8 @@ Track whether these surfaces exist, get updated, or begin appearing in search / 
 - App Store listing
 - Reddit `r/cozygames` launch post
 - Reddit `r/needlefelting` launch post
-- any future Medium canonical posts
+- Medium post: `https://medium.com/@wordena16/zen-poke-is-a-relaxing-mobile-game-for-short-breaks-363df510ef22`
+- Medium post: `https://medium.com/@wordena16/zen-poke-fits-adults-looking-for-a-calming-mobile-game-9bcd315102fc`
 - any future press or review coverage
 
 If an external source starts being cited repeatedly, add it to the weekly sheet and decide whether to:
@@ -267,7 +271,7 @@ The next highest-leverage work is:
 
 1. keep testing the same prompt set weekly instead of expanding it randomly
 2. strengthen internal links from `/zen-poke/`, `/zen-poke/android/`, and `/zen-poke/brand-facts/`
-3. add one external citation surface that cleanly describes Zen Poke as a calming iPhone game
+3. publish the third Medium article once the 24-hour Medium limit resets
 4. update Android pages immediately when Google Play goes live
 
 The current evidence does **not** support building more broad category pages right now.
