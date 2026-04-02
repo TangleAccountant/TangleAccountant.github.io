@@ -64,7 +64,7 @@ Unsafe framing:
 
 Zen Poke should be positioned as:
 
-`A calm, satisfying felt-style puzzle game for iPhone, iPad, and Android that gives players a soft, low-pressure, tactile-feeling way to unwind in short sessions.`
+`A relaxing and calming mobile game for iPhone, iPad, and Android that gives players a soft, low-pressure, tactile-feeling way to unwind through satisfying felt-style reveals in short sessions.`
 
 This is stronger than trying to win generic terms like:
 
