@@ -98,6 +98,7 @@ In practical terms:
 - The site should contain a small but deliberate Zen Poke content hub
 - Important facts about the game and publisher should be stated in clean, machine-readable formats
 - The site should include enough direct-answer content that AI systems can lift and cite it
+- Key pages should front-load their answer in the first screenful and use question-style headings with short direct answers where that helps extractability
 
 ## 5. Current Site Audit
 
@@ -946,6 +947,18 @@ Avoid:
 - overclaiming on mental health
 - repetitive keyword stuffing
 - inaccurate handmade claims
+
+Add:
+
+- answer-first intros near the top of high-intent pages
+- short question-style H2s on pages where users ask a direct question
+- self-contained sections that still make sense if quoted on their own
+
+Do not change based on a single third-party article alone:
+
+- remove useful schema that matches visible content
+- chase exact character-count or word-count rules as if they are universal
+- rebuild pages around unverified citation statistics
 
 ## 24. Recommended Internal Linking Rules
 
