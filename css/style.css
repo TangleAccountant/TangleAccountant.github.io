@@ -160,9 +160,15 @@ ul, ol {
     min-width: 44px;
 }
 
+.button-link:visited,
+.button-link:hover,
+.button-link:focus,
+.button-link:active {
+    color: #fff;
+}
+
 .button-link:hover {
     background: var(--green);
-    color: #fff;
     transform: translateY(-1px);
 }
 
@@ -172,9 +178,15 @@ ul, ol {
     border: 1.5px solid var(--emerald);
 }
 
+.button-link-secondary:visited,
+.button-link-secondary:hover,
+.button-link-secondary:focus,
+.button-link-secondary:active {
+    color: var(--emerald);
+}
+
 .button-link-secondary:hover {
     background: var(--lightest-green);
-    color: var(--emerald);
 }
 
 
@@ -1040,7 +1052,7 @@ nav a::after {
     margin-bottom: 0.4rem;
 }
 
-.legal-content a {
+.legal-content a:not(.button-link):not(.app-store-badge) {
     color: var(--emerald);
     text-decoration: underline;
     text-decoration-color: var(--pale-mint);
@@ -1049,7 +1061,7 @@ nav a::after {
     transition: text-decoration-color 0.2s;
 }
 
-.legal-content a:hover {
+.legal-content a:not(.button-link):not(.app-store-badge):hover {
     text-decoration-color: var(--emerald);
 }
 
