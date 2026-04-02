@@ -824,6 +824,32 @@ Not good for:
 
 - mass duplication
 
+### Paid press-release distribution
+
+Good for:
+
+- one real launch milestone with actual news value
+- expanding entity mentions beyond the site
+- creating additional citation surfaces that AI tools may fetch
+- supporting Android / Google Play launch visibility
+
+Best fit for this project:
+
+- a single paid press-release test when Google Play is live
+- use the release to point back to the main Zen Poke page, Android page, and store listings
+- treat it as a legitimacy and discovery test, not as a backlink tactic
+
+Recommended approach:
+
+- do not use press releases as a recurring SEO link scheme
+- do not distribute duplicate releases across multiple services
+- do not use this before there is a real launch update to announce
+
+Current recommendation:
+
+- test one paid Android-launch release through a lower-cost provider first
+- evaluate brand mentions, search visibility, referral traffic, and AI-citation pickup after launch
+
 ### Reddit and Quora
 
 Good for:
@@ -929,6 +955,7 @@ This will help attribute site-driven download intent more cleanly.
 - expand content based on indexed winners
 - build comparison-style or category-style pages only if there is evidence they deserve to exist
 - refine Android launch pages once Play is live
+- test one paid press-release distribution for the Android / Google Play launch
 - evaluate which pages drive actual clicks and downloads
 
 ## 23. Recommended Copy Rules For The Site Rewrite
