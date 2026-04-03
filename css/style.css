@@ -312,6 +312,22 @@ nav a::after {
     animation: fadeInUp 0.8s var(--ease-out) 0.15s both;
 }
 
+.hero-proof {
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    line-height: 1.4;
+    max-width: 760px;
+    backdrop-filter: blur(8px);
+    animation: fadeInUp 0.8s var(--ease-out) 0.25s both;
+}
+
 
 /* ===== CONTENT GRID (Homepage) ===== */
 
@@ -717,6 +733,17 @@ nav a::after {
     font-size: 1.1rem;
     line-height: 1.6;
     color: var(--dark-text);
+}
+
+.proof-line {
+    margin: 1rem 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--ink);
+}
+
+.proof-line strong {
+    color: var(--emerald);
 }
 
 .status-row {

@@ -10,6 +10,7 @@
     "relaxing casual game",
     "felt-style puzzle game"
   ],
+  "currentPuzzleCount": 100,
   "platforms": [
     "iPhone",
     "iPad",
@@ -29,5 +30,5 @@
     "terms": "https://funnymanfinance.com/terms/zen-poke/"
   },
   "summary": "Zen Poke is a calm felt-style puzzle game designed for short, satisfying, low-pressure mobile sessions.",
-  "lastUpdated": "2026-03-31"
+  "lastUpdated": "2026-04-03"
 }
