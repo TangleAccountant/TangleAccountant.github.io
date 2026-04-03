@@ -318,14 +318,18 @@ nav a::after {
     margin-top: 1rem;
     padding: 0.85rem 1.1rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.16);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid var(--pale-mint);
+    color: var(--emerald);
     font-size: clamp(0.95rem, 2vw, 1.1rem);
     line-height: 1.4;
     max-width: 760px;
-    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 24px rgba(22, 43, 34, 0.12);
     animation: fadeInUp 0.8s var(--ease-out) 0.25s both;
+}
+
+.hero-proof strong {
+    color: inherit;
 }
 
 
@@ -698,6 +702,24 @@ nav a::after {
     object-fit: contain;
 }
 
+.blog-content .callout-box {
+    margin-bottom: 1.5rem;
+}
+
+.blog-hero-logo {
+    background-color: #10231b;
+    background-size: contain;
+    background-position: center 70%;
+}
+
+.blog-hero-logo::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(22, 43, 34, 0.66) 0%,
+        rgba(22, 43, 34, 0.8) 100%
+    );
+}
+
 
 /* ===== ZEN POKE PAGE ===== */
 
@@ -736,7 +758,7 @@ nav a::after {
 }
 
 .proof-line {
-    margin: 1rem 0 0;
+    margin: 1rem 0;
     font-size: 1rem;
     line-height: 1.6;
     color: var(--ink);
