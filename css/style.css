@@ -1001,6 +1001,15 @@ a.app-card-badge--live:hover {
     line-height: 1.6;
 }
 
+.jokes-hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.74);
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
 .book-image {
     display: block;
     max-width: 240px;
@@ -1047,6 +1056,10 @@ a.app-card-badge--live:hover {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+}
+
+.jokes-content .blog-grid {
+    margin: 2rem 0 2.5rem;
 }
 
 .jokes-list {
