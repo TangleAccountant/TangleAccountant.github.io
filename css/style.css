@@ -1062,6 +1062,10 @@ a.app-card-badge--live:hover {
     margin: 2rem 0 2.5rem;
 }
 
+.jokes-content .callout-box {
+    margin-bottom: 2rem;
+}
+
 .jokes-list {
     list-style-type: decimal;
     padding-left: 2em;
