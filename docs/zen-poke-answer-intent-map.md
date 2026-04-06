@@ -1,6 +1,6 @@
 # Zen Poke Answer Intent Map
 
-Last updated: April 2, 2026
+Last updated: April 6, 2026
 
 This document is the first working answer-intent tracker for `funnymanfinance.com` and Zen Poke.
 
@@ -276,6 +276,25 @@ The next highest-leverage work is:
 
 The current evidence does **not** support building more broad category pages right now.
 It supports making the existing best pages easier for answer engines to trust and cite.
+
+## 8.2 Small rerun: April 6, 2026
+
+A small rerun was completed on April 6, 2026 for the highest-signal prompts in Perplexity.
+
+What changed:
+
+- `what is Zen Poke` improved from a pure restaurant collision to a split answer where the mobile game appears first, but the food-entity collision still remains
+- `where can I download Zen Poke` remains strong and grounded in owned pages plus the App Store
+- `is Zen Poke on Android` remains strong and grounded in the official Android status page
+- generic category prompts like `what is a relaxing puzzle game for iPhone`, `what is a good offline puzzle game for iPhone`, and `what is a daily puzzle game that feels relaxing` still do not surface Zen Poke
+
+Operational note:
+
+- the April 6 rerun was partial rather than full-platform
+- Perplexity was accessible and logged
+- automated Google Search checks were blocked by anti-bot rate limiting from this environment
+- direct `chatgpt.com` search-query checks were not reliably accessible from this environment without manual interactive access
+- because of that, the April 6 CSV additions currently cover Perplexity only
 
 ## 9. Suggested Sheet Columns
 
