@@ -36,6 +36,63 @@
         return pathname.replace(/\/+$/, "") + "/";
     }
 
+    function ensurePostFiatNavLink() {
+        var nav = document.querySelector("header nav");
+        var currentPath = normalizePath(window.location.pathname);
+        var link = null;
+
+        if (!nav) {
+            return;
+        }
+
+        Array.prototype.forEach.call(nav.querySelectorAll("a[href]"), function (candidate) {
+            try {
+                var candidateUrl = new URL(candidate.href, window.location.href);
+                if (normalizePath(candidateUrl.pathname) === "/post-fiat/") {
+                    link = candidate;
+                }
+            } catch (error) {
+                return;
+            }
+        });
+
+        if (!link) {
+            link = document.createElement("a");
+            link.href = "/post-fiat/";
+            link.textContent = "Post Fiat";
+
+            var blogLink = null;
+            Array.prototype.forEach.call(nav.querySelectorAll("a[href]"), function (candidate) {
+                try {
+                    var candidateUrl = new URL(candidate.href, window.location.href);
+                    if (normalizePath(candidateUrl.pathname) === "/blog/") {
+                        blogLink = candidate;
+                    }
+                } catch (error) {
+                    return;
+                }
+            });
+
+            if (blogLink && blogLink.nextSibling) {
+                nav.insertBefore(link, blogLink.nextSibling);
+            } else if (blogLink) {
+                nav.appendChild(link);
+            } else {
+                nav.appendChild(link);
+            }
+        }
+
+        if (currentPath.indexOf("/post-fiat/") === 0) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+
+        link.addEventListener("click", function () {
+            nav.classList.remove("active");
+        });
+    }
+
     function getTrackedNavigation(href, link) {
         var normalizedPath = normalizePath(href.pathname);
         var destinationHost = href.hostname;
@@ -107,6 +164,42 @@
             };
         }
 
+        if (normalizedPath === "/post-fiat/") {
+            return {
+                eventName: "post_fiat_navigation_click",
+                eventData: {
+                    destination_type: "post_fiat_hub",
+                    destination_path: normalizedPath,
+                    link_url: href.href,
+                    link_text: linkText
+                }
+            };
+        }
+
+        if (normalizedPath === "/post-fiat/tasks/") {
+            return {
+                eventName: "post_fiat_navigation_click",
+                eventData: {
+                    destination_type: "post_fiat_tasks",
+                    destination_path: normalizedPath,
+                    link_url: href.href,
+                    link_text: linkText
+                }
+            };
+        }
+
+        if (normalizedPath.indexOf("/post-fiat/") === 0) {
+            return {
+                eventName: "post_fiat_navigation_click",
+                eventData: {
+                    destination_type: "post_fiat_page",
+                    destination_path: normalizedPath,
+                    link_url: href.href,
+                    link_text: linkText
+                }
+            };
+        }
+
         if (normalizedPath.indexOf("/zen-poke/") === 0) {
             return {
                 eventName: "zen_poke_navigation_click",
@@ -121,6 +214,8 @@
 
         return null;
     }
+
+    ensurePostFiatNavLink();
 
     document.addEventListener("click", function (event) {
         var link = event.target.closest("a[href]");

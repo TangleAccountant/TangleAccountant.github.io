@@ -245,6 +245,11 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
+nav a[aria-current="page"] {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.16);
+}
+
 /* Kill old pipe separators */
 nav a::after {
     content: none !important;
@@ -748,6 +753,169 @@ a.app-card-badge--live:hover {
         rgba(22, 43, 34, 0.66) 0%,
         rgba(22, 43, 34, 0.8) 100%
     );
+}
+
+
+/* ===== POST FIAT SECTION ===== */
+
+.pf-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.pf-breadcrumbs span[aria-hidden="true"] {
+    color: var(--subtle);
+}
+
+.pf-kicker {
+    color: var(--emerald);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.pf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.pf-card {
+    background: #fff;
+    padding: 1.3rem 1.35rem;
+    border: 1px solid var(--light-border);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.pf-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+.pf-card p:last-child {
+    margin-bottom: 0;
+}
+
+.pf-stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.9rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.pf-stat {
+    background: linear-gradient(135deg, #fff 0%, var(--lightest-green) 100%);
+    border: 1px solid var(--pale-mint);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.05rem;
+}
+
+.pf-stat strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--ink);
+    font-size: 1.2rem;
+}
+
+.pf-stat span {
+    color: var(--body-text);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.pf-card-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0 2rem;
+}
+
+.pf-card-list li {
+    margin-bottom: 1rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--light-border);
+    border-radius: var(--radius-sm);
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.pf-card-list li:last-child {
+    margin-bottom: 0;
+}
+
+.pf-pill {
+    display: inline-block;
+    margin-bottom: 0.4rem;
+    padding: 0.32rem 0.75rem;
+    border-radius: 999px;
+    background: var(--lightest-green);
+    color: var(--emerald);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.pf-meta {
+    margin-bottom: 0.5rem;
+    color: var(--muted);
+    font-size: 0.93rem;
+}
+
+.pf-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.pf-task-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.pf-task-card {
+    background: #fff;
+    border: 1px solid var(--light-border);
+    border-radius: var(--radius);
+    padding: 1.3rem 1.35rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03), 0 4px 14px rgba(0,0,0,0.04);
+}
+
+.pf-task-card h3 {
+    margin-top: 0.35rem;
+    margin-bottom: 0.55rem;
+}
+
+.pf-task-card p:last-child {
+    margin-bottom: 0;
+}
+
+.pf-status {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    padding: 0.32rem 0.75rem;
+    border-radius: 999px;
+    background: var(--lightest-green);
+    color: var(--emerald);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.pf-status-secondary {
+    background: var(--sand);
+    color: var(--forest);
 }
 
 
@@ -1563,6 +1731,12 @@ a.app-card-badge--live:hover {
     .blog-content p,
     .blog-content li {
         font-size: 1rem;
+    }
+
+    .pf-cta-row .button-link,
+    .pf-cta-row .button-link-secondary {
+        width: 100%;
+        justify-content: center;
     }
 
     .blog-image {
