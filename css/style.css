@@ -143,13 +143,11 @@ ul, ol {
 
 /* ===== BUTTONS ===== */
 
-a.button-link {
+.button-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.625rem 1.25rem;
-    background: var(--emerald);
-    color: #fff;
     text-decoration: none;
     border-radius: 999px;
     font-weight: 600;
@@ -160,33 +158,43 @@ a.button-link {
     min-width: 44px;
 }
 
+.button-link:not(.button-link-secondary) {
+    background: var(--emerald);
+    color: #fff;
+}
+
 a.button-link:visited,
-a.button-link:hover,
 a.button-link:focus,
 a.button-link:active {
-    color: #fff;
     text-decoration: none;
 }
 
-a.button-link:hover {
+.button-link:not(.button-link-secondary):visited,
+.button-link:not(.button-link-secondary):hover,
+.button-link:not(.button-link-secondary):focus,
+.button-link:not(.button-link-secondary):active {
+    color: #fff;
+}
+
+.button-link:not(.button-link-secondary):hover {
     background: var(--green);
     transform: translateY(-1px);
 }
 
-.button-link-secondary {
+a.button-link.button-link-secondary {
     background: transparent;
     color: var(--emerald);
     border: 1.5px solid var(--emerald);
 }
 
-.button-link-secondary:visited,
-.button-link-secondary:hover,
-.button-link-secondary:focus,
-.button-link-secondary:active {
+a.button-link.button-link-secondary:visited,
+a.button-link.button-link-secondary:hover,
+a.button-link.button-link-secondary:focus,
+a.button-link.button-link-secondary:active {
     color: var(--emerald);
 }
 
-.button-link-secondary:hover {
+a.button-link.button-link-secondary:hover {
     background: var(--lightest-green);
 }
 
