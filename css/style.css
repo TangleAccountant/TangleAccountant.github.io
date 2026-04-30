@@ -394,6 +394,13 @@ nav a::after {
     order: 0;
 }
 
+#post-fiat {
+    grid-column: 1 / -1;
+    order: 0.35;
+    background: linear-gradient(135deg, #fff 0%, var(--lightest-green) 100%);
+    border: 1px solid var(--pale-mint);
+}
+
 /* Jokes: full width bottom */
 #jokes {
     grid-column: 1 / -1;
@@ -1624,6 +1631,7 @@ a.app-card-badge--live:hover {
     }
 
     #zen-poke,
+    #post-fiat,
     #jokes {
         grid-column: 1;
     }
