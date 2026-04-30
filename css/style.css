@@ -317,27 +317,6 @@ nav a::after {
     animation: fadeInUp 0.8s var(--ease-out) 0.15s both;
 }
 
-.hero p.hero-proof {
-    position: relative;
-    z-index: 2;
-    margin-top: 1rem;
-    padding: 0.85rem 1.1rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.96);
-    border: 1px solid var(--pale-mint);
-    color: var(--emerald);
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
-    line-height: 1.4;
-    max-width: 760px;
-    box-shadow: 0 10px 24px rgba(22, 43, 34, 0.12);
-    animation: fadeInUp 0.8s var(--ease-out) 0.25s both;
-}
-
-.hero p.hero-proof strong {
-    color: inherit;
-}
-
-
 /* ===== CONTENT GRID (Homepage) ===== */
 
 .content-grid {
